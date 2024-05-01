@@ -1,0 +1,241 @@
+{
+  "search_metadata": {
+    "id": "65a1d5f03a218a9a3fdc0a9f",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/5d84abd1659fe51c/65a1d5f03a218a9a3fdc0a9f.json",
+    "created_at": "2024-01-13 00:14:40 UTC",
+    "processed_at": "2024-01-13 00:14:40 UTC",
+    "google_maps_url": "https://www.google.com/maps/search/pizza/@40.7455096,-74.0083012,14z?hl=en",
+    "raw_html_file": "https://serpapi.com/searches/5d84abd1659fe51c/65a1d5f03a218a9a3fdc0a9f.html",
+    "total_time_taken": 2.94
+  },
+  "search_parameters": {
+    "engine": "google_maps",
+    "type": "search",
+    "q": "pizza",
+    "ll": "@40.7455096,-74.0083012,14z",
+    "google_domain": "google.com",
+    "hl": "en"
+  },
+  "search_information": {
+    "local_results_state": "Results for exact spelling",
+    "query_displayed": "pizza"
+  },
+  "local_results": [
+    {
+      "position": 1,
+      "title": "Joe's Pizza Broadway",
+      "place_id": "ChIJifIePKtZwokRVZ-UdRGkZzs",
+      "data_id": "0x89c259ab3c1ef289:0x3b67a41175949f55",
+      "data_cid": "4280570365733019477",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c259ab3c1ef289%3A0x3b67a41175949f55&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c259ab3c1ef289%3A0x3b67a41175949f55&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.754679499999995,
+        "longitude": -73.9870291
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJifIePKtZwokRVZ-UdRGkZzs",
+      "provider_id": "/g/11bw4ws2mt",
+      "rating": 4.5,
+      "reviews": 17266,
+      "price": "$",
+      "type": "Pizza restaurant",
+      "types": [
+        "Pizza restaurant",
+        "Pizza delivery",
+        "Restaurant"
+      ],
+      "type_id": "pizza_restaurant",
+      "type_ids": [
+        "pizza_restaurant",
+        "pizza_delivery",
+        "restaurant"
+      ],
+      "address": "1435 Broadway, New York, NY 10018",
+      "open_state": "Open ⋅ Closes 5 AM Sat",
+      "hours": "Open ⋅ Closes 5 AM Sat",
+      "operating_hours": {
+        "friday": "10 AM–5 AM",
+        "saturday": "10 AM–5 AM",
+        "sunday": "10 AM–4 AM",
+        "monday": "10 AM–4 AM",
+        "tuesday": "10 AM–4 AM",
+        "wednesday": "10 AM–4 AM",
+        "thursday": "10 AM–4 AM"
+      },
+      "phone": "(646) 559-4878",
+      "website": "http://joespizzanyc.com/",
+      "description": "Classic NYC slice shop. Modern outpost of a longtime counter-serve pizza joint prepping New York-style slices and pies.",
+      "service_options": {
+        "dine_in": true,
+        "takeout": true,
+        "no_contact_delivery": true
+      },
+      "order_online": "https://food.google.com/chooseprovider?restaurantId=/g/11bw4ws2mt&g2lbs=AIQllVwZUQMq-GnQ20P0H5UrnBtAx3VEn9dbUzYWGIKULm91HORAhyw94aP7xDfovv_uR1RAzlN35qEzlsZJ4yq21MKCGF_30_f5EpJlNXmrXhPWRAhYwVM36iHo91f1h0yJ3AxWSF4rY_2i06xpJOLA1IMWpNR-Rg%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=tactile&gei=8dWhZfreGYXAi-gPheCdkAI&ei=8dWhZfreGYXAi-gPheCdkAI&fo_s=OA,SOE&opi=79508299",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNhcaKMILyQDZIailnNG6WL9EHzU8H2MJau-mXY=w128-h92-k-no"
+    },
+    {
+      "position": 2,
+      "title": "Little Italy Pizza",
+      "place_id": "ChIJj5R4TqhZwokRuxkrhtALBKk",
+      "data_id": "0x89c259a84e78948f:0xa9040bd0862b19bb",
+      "data_cid": "12178872282548738491",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c259a84e78948f%3A0xa9040bd0862b19bb&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c259a84e78948f%3A0xa9040bd0862b19bb&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.747606999999995,
+        "longitude": -73.9848854
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJj5R4TqhZwokRuxkrhtALBKk",
+      "provider_id": "/g/1tcx7ycp",
+      "rating": 4.2,
+      "reviews": 3634,
+      "price": "$",
+      "type": "Pizza restaurant",
+      "types": [
+        "Pizza restaurant",
+        "Italian restaurant",
+        "Takeout Restaurant",
+        "Pizza delivery"
+      ],
+      "type_id": "pizza_restaurant",
+      "type_ids": [
+        "pizza_restaurant",
+        "italian_restaurant",
+        "takeout_restaurant",
+        "pizza_delivery"
+      ],
+      "address": "2 E 33rd St, New York, NY 10016",
+      "open_state": "Open ⋅ Closes 5 AM Sat",
+      "hours": "Open ⋅ Closes 5 AM Sat",
+      "operating_hours": {
+        "friday": "9 AM–5 AM",
+        "saturday": "9 AM–5 AM",
+        "sunday": "9 AM–4 AM",
+        "monday": "9 AM–4 AM",
+        "tuesday": "9 AM–4 AM",
+        "wednesday": "9 AM–4 AM",
+        "thursday": "9 AM–4 AM"
+      },
+      "phone": "(212) 481-5200",
+      "website": "https://www.littleitalypizza.com/",
+      "description": "New York-style pizzeria. Slices on-the-go, New York-style pies & calzones in a counter-service Midtown setting.",
+      "service_options": {
+        "dine_in": true,
+        "takeout": true,
+        "delivery": true
+      },
+      "order_online": "https://food.google.com/chooseprovider?restaurantId=/g/1tcx7ycp&g2lbs=AIQllVxLYUnVoJMH-xaeG7L2C1If163FKmsOmPDB1Lm6r9nkLrQPWX3Di-MK0IMCaEsQbNotwXUa45pE_nEd717JSre-EuOnS63Gb8tdelJzaTqtw-7kNlI-l1mmWBFl3r_Qg48vdQR0fLKEykKwyB7N39kUtJ7w5w%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=tactile&gei=8dWhZfreGYXAi-gPheCdkAI&ei=8dWhZfreGYXAi-gPheCdkAI&fo_s=OA,SOE&opi=79508299",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipOXsOKyhj_qB8l9idMSe8VOTo4tJ4g4j15Sr79X=w147-h92-k-no"
+    },
+    {
+      "position": 3,
+      "title": "Angelo's Pizza",
+      "place_id": "ChIJCTvSdPhYwokR5PDoOE7VuCc",
+      "data_id": "0x89c258f874d23b09:0x27b8d54e38e8f0e4",
+      "data_cid": "2862272095132905700",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c258f874d23b09%3A0x27b8d54e38e8f0e4&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c258f874d23b09%3A0x27b8d54e38e8f0e4&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7638118,
+        "longitude": -73.98294469999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJCTvSdPhYwokR5PDoOE7VuCc",
+      "provider_id": "/g/1th5dgw_",
+      "rating": 4.2,
+      "reviews": 2036,
+      "price": "$$",
+      "type": "Pizza restaurant",
+      "types": [
+        "Pizza restaurant",
+        "Italian restaurant"
+      ],
+      "type_id": "pizza_restaurant",
+      "type_ids": [
+        "pizza_restaurant",
+        "italian_restaurant"
+      ],
+      "address": "1697 Broadway, New York, NY 10019",
+      "open_state": "Open ⋅ Closes 3 AM",
+      "hours": "Open ⋅ Closes 3 AM",
+      "operating_hours": {
+        "friday": "11:30 AM–3 AM",
+        "saturday": "11:30 AM–3 AM",
+        "sunday": "11:30 AM–3 AM",
+        "monday": "11:30 AM–3 AM",
+        "tuesday": "11:30 AM–3 AM",
+        "wednesday": "11:30 AM–3 AM",
+        "thursday": "11:30 AM–3 AM"
+      },
+      "phone": "(212) 245-8811",
+      "website": "https://www.angelosbroadway.com/?y_source=1_OTM1MzAwOTktNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "description": "Coal-fired, brick-oven pizza. Family-friendly pizzeria serving thin-crust pies alongside calzones, pastas & salads.",
+      "service_options": {
+        "dine_in": true,
+        "curbside_pickup": true,
+        "no_contact_delivery": true
+      },
+      "reserve_a_table": "https://www.google.com/maps/reserve/v/dine/c/m7pZRkxkv7E?source=pa&opi=79508299&hl=en-US&gei=8dWhZfreGYXAi-gPheCdkAI&sourceurl=http://www.google.com/service/MapsSearchService/Search?hl%3Den%26authuser%3D0%26gl%3Dus%26q%3Dpizza%26tbm%3Dmap",
+      "order_online": "https://food.google.com/chooseprovider?restaurantId=/g/1th5dgw_&g2lbs=AIQllVxV4fUgfVrBfL7BbzTnZRumVuSYnwEYp-EzAioP60pnEo7dsctVz6oI_DlySvdoTe3J0NBvNKvzAM0FXcjF4L-xBoh3GCqFt2jQgBupyQLk1Z8msI65-HTW6TXq5OIQoMV5Q5htVMG20S9Kscuou29fZa89SA%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=tactile&gei=8dWhZfreGYXAi-gPheCdkAI&ei=8dWhZfreGYXAi-gPheCdkAI&fo_s=OA,SOE&opi=79508299",
+      "thumbnail": "https://lh5.googleusercontent.com/p/AF1QipNVIN-HKIxqx_20VoUNw5HR4udPYlBrSDw_Jl2g=w80-h100-k-no"
+    },
+    {
+      "position": 4,
+      "title": "Uncle Paul's Pizza NY",
+      "place_id": "ChIJPxPd_P1YwokRfzLhSiACEoU",
+      "data_id": "0x89c258fdfcdd133f:0x851202204ae1327f",
+      "data_cid": "9588728894343688831",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x89c258fdfcdd133f%3A0x851202204ae1327f&engine=google_maps_reviews&hl=en",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x89c258fdfcdd133f%3A0x851202204ae1327f&engine=google_maps_photos&hl=en",
+      "gps_coordinates": {
+        "latitude": 40.7546824,
+        "longitude": -73.9768744
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&place_id=ChIJPxPd_P1YwokRfzLhSiACEoU",
+      "provider_id": "/g/11cfhqnqf",
+      "rating": 4.4,
+      "reviews": 2200,
+      "price": "$$",
+      "type": "Pizza restaurant",
+      "types": [
+        "Pizza restaurant",
+        "Delivery Restaurant",
+        "Pizza delivery",
+        "Wine bar"
+      ],
+      "type_id": "pizza_restaurant",
+      "type_ids": [
+        "pizza_restaurant",
+        "delivery_restaurant",
+        "pizza_delivery",
+        "wine_bar"
+      ],
+      "address": "70 Vanderbilt Ave, New York, NY 10017",
+      "open_state": "Open ⋅ Closes 9 PM",
+      "hours": "Open ⋅ Closes 9 PM",
+      "operating_hours": {
+        "friday": "10 AM–9 PM",
+        "saturday": "10 AM–9 PM",
+        "sunday": "10 AM–9 PM",
+        "monday": "10 AM–9 PM",
+        "tuesday": "10 AM–9 PM",
+        "wednesday": "10 AM–9 PM",
+        "thursday": "10 AM–9 PM"
+      },
+      "phone": "(212) 922-1200",
+      "website": "https://www.unclepaulspizzamenu.com/",
+      "description": "Casual 24-hour Italian eatery. Slices, pies & Italian dishes with a gourmet twist are served round-the-clock in a low-key space.",
+      "service_options": {
+        "dine_in": true,
+        "takeout": true,
+        "no_contact_delivery": true
+      },
+      "order_online": "https://food.google.com/chooseprovider?restaurantId=/g/11cfhqnqf&g2lbs=AIQllVwwFV-00KVtXPDLOl909gygKO1sb8ufsiTp4qrzDue8tLx2LI8usIZdD5vl_ws8gi5RkBKOTGggSaxNRFmBIMbevCDCh-6CX4dPqc9BXZggJTH_GdMup4K9TVz2GPf2Ot5oeaXrGmvMdhLTjbfDfR7HT771Vg%3D%3D&hl=en-US&gl=us&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=tactile&gei=8dWhZfreGYXAi-gPheCdkAI&ei=8dWhZfreGYXAi-gPheCdkAI&fo_s=OA,SOE&opi=79508299",
+      "thumbnail": "https://lh3.googleusercontent.com/gps-proxy/AMy85WLRblytFif4FRHHG1pnPF2PHs-Luusohb1mFT9pohp7x7cIpe2JN4k4rzQxvgRJlFBowt99Z7YQ_DzFe7kqwyZd8pUvFfRGUm05JoDrt9YePoYV057LYqZ42jNyLPSr9chd8sM25ii1aLC7d6V_HPZbrqCvBNwvr7SbejicmSeEWgBxbTKq8KR2=w147-h92-k-no"
+    },
+    ...
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=en&ll=%4040.7455096%2C-74.0083012%2C14z&q=pizza&start=20&type=search"
+  }
+}

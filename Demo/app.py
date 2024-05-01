@@ -10,7 +10,6 @@ st.set_page_config(page_title="Project Demo", page_icon="demo/browser.png")
 st.title("Project Demo")
 st.markdown("""<hr style="height:3px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 
-st.sidebar.image("demo/ACM.jpg", use_column_width=True)
 option = st.sidebar.radio("Choose an option", ("Project Description", "Coding Demo", "Live Demo", "About"))
 
 if option == "Project Description":
