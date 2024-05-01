@@ -1,4 +1,4 @@
-# Smart Glasses Optimizer README
+# Innovative Smart Glass using Metaheuristic Based Gradient-Free Optimization technique
 
 ## Introduction:
 Smart glasses offer great potential for aiding visually impaired individuals, but often overwhelm users with excessive information. Our research addresses this issue through the development of an optimizer—a sophisticated system integrated into smart glasses. By leveraging real-time streaming protocol (RTSM) and cutting-edge deep learning technologies like You Only Look Once version 8 (YOLOv8) for object detection and Large Language Model Meta AI (LLaMA) for natural language processing, our optimizer filters irrelevant information, prioritizing essential navigational cues for users.
