@@ -1,5 +1,5 @@
 # Innovative Smart Glass using Metaheuristic Based Gradient-Free Optimization technique
-### Cheakout our demo Web app here 👇
+👇### Checkout our demo Web app
 https://realtime-detection.streamlit.app/ 
 
 ## Introduction:
