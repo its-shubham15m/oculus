@@ -184,7 +184,7 @@ def play_webcam(confidence, model):
     """
 
     # OpenCV capture object for webcam
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
     # Check if webcam opened successfully
     if not cap.isOpened():
@@ -279,7 +279,7 @@ def display_webcam():
     Displays real-time video stream from the webcam with an option to toggle between normal and mirrored mode.
     """
     # OpenCV capture object for webcam
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
     # Check if webcam opened successfully
     if not cap.isOpened():
