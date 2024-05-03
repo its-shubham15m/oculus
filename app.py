@@ -12,7 +12,6 @@ import streamlit as st
 # Local Modules
 import settings
 import helper
-from Demo import app
 
 
 
@@ -120,7 +119,6 @@ if "sidebar_selection" not in ms:
 
 # Main page heading
 st.title("Detection using YOLOv8")
-st.markdown()
 st.warning('👈 Select your model')
 
 # Sidebar
