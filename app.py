@@ -21,7 +21,7 @@ logo = PIL.Image.open('images/pngwing.com (1).png')
 logo = logo.resize((500, 500))
 # Setting page layout
 st.set_page_config(
-    page_title="Human Detection using GB-Mask",
+    page_title="Detection using YOLOv8",
     page_icon=logo,
     layout="wide",
     initial_sidebar_state="auto"
@@ -120,7 +120,7 @@ if "sidebar_selection" not in ms:
     ms.sidebar_selection = False
 
 # Main page heading
-st.title("Human Detection using GB-Mask")
+st.title("Detection using YOLOv8")
 st.warning('👈 Select your model')
 
 # Sidebar
