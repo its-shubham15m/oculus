@@ -31,6 +31,15 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
+def load_css():
+    css_file = os.path.join(static_path, "styles.css")
+    with open(css_file, "r") as f:
+        css = f"<style>{f.read()}</style>"
+        st.markdown(css, unsafe_allow_html=True)
+
+
+# Initialize session state
 ms = st.session_state
 if "themes" not in ms:
     ms.themes = {
@@ -40,7 +49,7 @@ if "themes" not in ms:
             "theme.base": "dark",
             "theme.backgroundColor": "black",
             "theme.primaryColor": "#c98bdb",
-            "theme.secondaryBackgroundColor": "#14061E",
+            "theme.secondaryBackgroundColor": "#092635",
             "theme.textColor": "white",
             "button_face": "🌜"
         },
@@ -48,42 +57,15 @@ if "themes" not in ms:
             "theme.base": "light",
             "theme.backgroundColor": "white",
             "theme.primaryColor": "#5591f5",
-            "theme.secondaryBackgroundColor": "#7bd5db",
+            "theme.secondaryBackgroundColor": "#F0EBE3",
             "theme.textColor": "#0a1464",
             "button_face": "🌞"
         }
     }
 
 
-
-
-
-# Function to get holiday message for a given date
-def get_message_of_the_day(date):
-    with open('assets/holiday-data.csv', mode='r') as file:
-        reader = csv.reader(file)
-        next(reader)  # Skip header row
-        for row in reader:
-            holiday_date = datetime.datetime.strptime(row[0], '%d %B %Y').date()
-            if holiday_date == date:
-                month_name = date.strftime('%B')  # Get the month name from the date
-                return row[1], row[2], month_name  # Return the holiday message, significance, and month name
-    return None, None, None  # Return None if no holiday message found for the date
-
-# Function to get the current time with time zone for Kolkata
-def get_current_time_kolkata():
-    # Get the current time in UTC
-    current_time_utc = datetime.datetime.now(pytz.utc)
-    # Convert the current time to Kolkata time zone
-    kolkata_time = current_time_utc.astimezone(pytz.timezone('Asia/Kolkata'))
-    return kolkata_time.strftime('%H:%M:%S %Z')
-
-
-
-
-
+# Function to change theme
 def change_theme():
-    ms.sidebar_selection = True  # Initialize sidebar_selection when anything is selected in the sidebar
     previous_theme = ms.themes["current_theme"]
     tdict = ms.themes["light"] if ms.themes["current_theme"] == "light" else ms.themes["dark"]
     for vkey, vval in tdict.items():
@@ -107,7 +89,30 @@ st.button(btn_face, on_click=change_theme)
 # Check if theme needs to be refreshed
 if not ms.themes["refreshed"]:
     ms.themes["refreshed"] = True
+    st.rerun()
 
+
+
+
+# Function to get holiday message for a given date
+def get_message_of_the_day(date):
+    with open('assets/holiday-data.csv', mode='r') as file:
+        reader = csv.reader(file)
+        next(reader)  # Skip header row
+        for row in reader:
+            holiday_date = datetime.datetime.strptime(row[0], '%d %B %Y').date()
+            if holiday_date == date:
+                month_name = date.strftime('%B')  # Get the month name from the date
+                return row[1], row[2], month_name  # Return the holiday message, significance, and month name
+    return None, None, None  # Return None if no holiday message found for the date
+
+# Function to get the current time with time zone for Kolkata
+def get_current_time_kolkata():
+    # Get the current time in UTC
+    current_time_utc = datetime.datetime.now(pytz.utc)
+    # Convert the current time to Kolkata time zone
+    kolkata_time = current_time_utc.astimezone(pytz.timezone('Asia/Kolkata'))
+    return kolkata_time.strftime('%H:%M:%S %Z')
 
 
 

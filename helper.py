@@ -66,19 +66,6 @@ def _display_detected_frames(conf, model, st_frame, image, is_display_tracking=N
 
 
 def play_youtube_video(conf, model):
-    """
-    Plays a webcam stream. Detects Objects in real-time using the YOLOv8 object detection model.
-
-    Parameters:
-        conf: Confidence of YOLOv8 model.
-        model: An instance of the `YOLOv8` class containing the YOLOv8 model.
-
-    Returns:
-        None
-
-    Raises:
-        None
-    """
     source_youtube = st.sidebar.text_input("YouTube Video url")
 
     is_display_tracker, tracker = display_tracker_options()
