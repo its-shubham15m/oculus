@@ -14,7 +14,6 @@ import settings
 import helper
 
 
-
 logo = PIL.Image.open('images/pngwing.com (1).png')
 logo = logo.resize((500, 500))
 # Setting page layout
