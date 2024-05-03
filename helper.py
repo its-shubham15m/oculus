@@ -162,6 +162,7 @@ def single_display_detected_frames(conf, model, image, is_display_tracking=None,
 
     Returns:
         Processed image with detections.
+        Detection information as a string.
     """
     if is_display_tracking:
         res = model.track(image, conf=conf, persist=True, tracker=tracker)
@@ -169,15 +170,21 @@ def single_display_detected_frames(conf, model, image, is_display_tracking=None,
         res = model.predict(image, conf=conf)
 
     res_plotted = res[0].plot()
-    return res_plotted  # Return the processed image with detections
 
-def play_webcam(confidence, model):
+    # Convert detection information to a string
+    detection_info = "Detection Info: " + str(res[0])
+
+    return res_plotted, detection_info
+
+
+def play_webcam(confidence, model, frame_gap=5):
     """
     Plays a webcam stream and performs object detection in real-time using the YOLOv8 object detection model.
 
     Parameters:
         confidence: Confidence threshold for object detection.
         model: An instance of the `YOLOv8` class containing the YOLOv8 model.
+        frame_gap: Number of frames to skip before performing object detection.
 
     Returns:
         None
@@ -202,6 +209,12 @@ def play_webcam(confidence, model):
     # Placeholder for displaying the detected objects
     st_objects = col2.empty()
 
+    # Placeholder for displaying detection results in a dialog box
+    detection_info_placeholder = st.sidebar.empty()
+
+    # Initialize frame counter for frame gap
+    frame_count = 0
+
     # Loop to capture frames from the webcam
     while True:
         ret, frame = cap.read()
@@ -211,20 +224,33 @@ def play_webcam(confidence, model):
             st.error("Failed to capture frame from webcam.")
             break
 
-        # Mirror the frame horizontally
-        mirrored_frame = cv2.flip(frame, 0)
+        # Increment frame counter
+        frame_count += 1
 
-        # Display the mirrored frame in the Streamlit app
-        st_frame.image(mirrored_frame, channels="BGR")
+        # Display the frame in the Streamlit app
+        st_frame.image(frame, channels="BGR")
 
-        # Detect objects in the frame
-        processed_frame = single_display_detected_frames(confidence, model, frame)
+        # Perform object detection only if frame count reaches frame gap
+        if frame_count == frame_gap:
+            try:
+                # Detect objects in the frame and get processed image with detections
+                processed_frame, detection_info = single_display_detected_frames(confidence, model, frame)
 
-        # Display the processed frame with detections
-        st_objects.image(processed_frame, channels="BGR", use_column_width=True)
+                # Display the processed frame with detections
+                st_objects.image(processed_frame, channels="BGR", use_column_width=True)
+
+                # Display detection results in the sidebar
+                detection_info_placeholder.text("Detection Results:")
+                detection_info_placeholder.write(detection_info)
+
+            except Exception as e:
+                st.error(f"Error processing frame: {e}")
+
+            # Reset frame count
+            frame_count = 0
 
         # Add a small delay to reduce CPU usage
-        st.experimental_rerun()
+        time.sleep(0.01)
 
     # Release the webcam
     cap.release()
