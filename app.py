@@ -5,6 +5,8 @@ import csv
 import datetime
 import pytz
 import time
+import random
+import string
 
 # External packages
 import streamlit as st
@@ -12,8 +14,10 @@ import streamlit as st
 # Local Modules
 import settings
 import helper
-
-
+random.seed(42)
+def generate_key():
+    mixed_case_key = ''.join(random.choices(string.ascii_letters, k=22))
+    return mixed_case_key
 logo = PIL.Image.open('images/pngwing.com (1).png')
 logo = logo.resize((500, 500))
 # Setting page layout
@@ -126,7 +130,14 @@ st.warning('👈 Select your model')
 
 # Sidebar
 st.sidebar.header("Features")
-
+st.sidebar.write('Press the button to generate API.')
+if st.sidebar.button('Generate Key'):
+    key = generate_key()
+    st.sidebar.write(f'Generated Key: {key}')
+text_input = st.sidebar.text_input('Enter Context:')
+if st.sidebar.button("Send"):
+        # Clear the textbox when the button is pressed
+        text_input = ""
 # Model Options
 model_type = st.sidebar.radio(
     "Select Task", ['Detection', 'Segmentation'])
